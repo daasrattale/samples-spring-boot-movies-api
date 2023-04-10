@@ -2,10 +2,9 @@ package io.xrio.movies.model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -23,6 +22,6 @@ public class Movie {
     private String name;
     private String type;
     private Long duration;
-    private Long releaseYear;
+    private Date releaseDate;
 
 }
